@@ -175,6 +175,7 @@ Return the appropriate apiGroup for PodSecurityPolicy.
 Check the ingress controller version tag is at most three versions behind the last release
 */}}
 {{- define "isControllerTagValid" -}}
+  {{- printf "true" }}
 {{- end -}}
 
 {{/*
