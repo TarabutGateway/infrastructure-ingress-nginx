@@ -39,4 +39,4 @@ jobs:
         CR_TOKEN: "${{ secrets.GH_TOKEN }}"
       with: 
         charts_repo_url: https://tarabutgateway.github.io/ingress-nginx/
-        charts_dir: stable
+        charts_dir: stable/nginx-ingress
