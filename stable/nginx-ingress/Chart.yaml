@@ -4,16 +4,18 @@ name: ingress-nginx
 # Also update CHANGELOG.md
 version: 4.4.2
 appVersion: 1.5.1
-home: https://github.com/TarabutGateway/infrastructure-ingress-nginx.git
+home: https://github.com/kubernetes/ingress-nginx
 description: Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer
 icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
 keywords:
   - ingress
   - nginx
 sources:
-  - https://github.com/TarabutGateway/infrastructure-ingress-nginx.git
+  - https://github.com/kubernetes/ingress-nginx
 maintainers:
-  - name: TG
+  - name: rikatz
+  - name: strongjz
+  - name: tao12345666333
 engine: gotpl
 kubeVersion: ">=1.20.0-0"
 annotations:
@@ -27,4 +29,3 @@ annotations:
     - add:(admission-webhooks) ability to set securityContext
     - Updated Helm chart to use the fullname for the electionID if not specified
     - Rename controller-wehbooks-networkpolicy.yaml
-
