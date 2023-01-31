@@ -10,10 +10,10 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.5.1
-    created: "2023-01-31T22:40:49.127740815Z"
+    created: "2023-01-31T23:16:12.230916044Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
-    digest: a50f2e6138cb6f2deff00123ce2eaa9641641cdbbbec604d11290777bad23fb9
+    digest: 1bc88eaaf6b8466101d4d8e629a30e736ad26716b03de6d12efb47e592935b0a
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
     keywords:
@@ -30,4 +30,4 @@ entries:
     urls:
     - https://github.com/TarabutGateway/infrastructure-ingress-nginx/releases/download/ingress-nginx-4.4.2/ingress-nginx-4.4.2.tgz
     version: 4.4.2
-generated: "2023-01-31T22:40:48.939983735Z"
+generated: "2023-01-31T23:16:12.030048909Z"
