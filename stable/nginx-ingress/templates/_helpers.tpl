@@ -168,12 +168,21 @@ Create the name of the backend service account to use - only used when podsecuri
 Return the appropriate apiGroup for PodSecurityPolicy.
 */}}
 {{- define "podSecurityPolicy.apiGroup" -}}
+{{- if semverCompare ">=1.14-0" .Capabilities.KubeVersion.GitVersion -}}
 {{- print "policy" -}}
+{{- else -}}
+{{- print "extensions" -}}
+{{- end -}}
 {{- end -}}
 
 {{/*
 Check the ingress controller version tag is at most three versions behind the last release
 */}}
+{{- define "isControllerTagValid" -}}
+{{- if not (semverCompare ">=0.27.0-0" .Values.controller.image.tag) -}}
+{{- fail "Controller container image tag should be 0.27.0 or higher" -}}
+{{- end -}}
+{{- end -}}
 
 {{/*
 IngressClass parameters.
