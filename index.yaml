@@ -3,17 +3,18 @@ entries:
   ingress-nginx:
   - annotations:
       artifacthub.io/changes: |
-        - Adding support for disabling liveness and readiness probes to the Helm chart
-        - add:(admission-webhooks) ability to set securityContext
-        - Updated Helm chart to use the fullname for the electionID if not specified
-        - Rename controller-wehbooks-networkpolicy.yaml
+        - "add lint on chart before release (#9570)"
+        - "ci: remove setup-helm step (#9404)"
+        - "feat(helm): Optionally use cert-manager instead admission patch (#9279)"
+        - "run helm release on main only and when the chart/value changes only (#9290)"
+        - "Update Ingress-Nginx version controller-v1.6.4"
       artifacthub.io/prerelease: "false"
     apiVersion: v2
-    appVersion: 1.5.1
-    created: "2023-01-31T23:59:13.812905643Z"
+    appVersion: 1.6.4
+    created: "2023-03-09T16:00:59.077780339Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
-    digest: e284f4b1945455542377284a4227cd3ec83f10498985160d6f5b5565d1de5a8c
+    digest: 4d57c18029693340b084f6e6b8b1114b5191c258a2d48ff2338274bc747a760b
     home: https://github.com/kubernetes/ingress-nginx
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
     keywords:
@@ -28,6 +29,6 @@ entries:
     sources:
     - https://github.com/kubernetes/ingress-nginx
     urls:
-    - https://github.com/TarabutGateway/infrastructure-ingress-nginx/releases/download/ingress-nginx-4.4.2/ingress-nginx-4.4.2.tgz
-    version: 4.4.2
-generated: "2023-01-31T23:59:13.49293085Z"
+    - https://github.com/TarabutGateway/infrastructure-ingress-nginx/releases/download/ingress-nginx-4.5.2/ingress-nginx-4.5.2.tgz
+    version: 4.5.2
+generated: "2023-03-09T16:00:58.757862838Z"
